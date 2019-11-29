@@ -19,6 +19,18 @@ const Bottom = (
         bottom
     </div>
 )
+const Bottom2 = function (){
+    const [n, setN] = React.useState(0)
+    return (
+        <div>
+            {n}
+            <button onClick = {function () {
+                setN(n + 10)
+            }}>+10</button>
+        </div>
+    )
+}
+
 const div = (
     <div>
         {Header}
@@ -27,7 +39,7 @@ const div = (
         <p>
             <span>hi</span>
         </p>
-        {Bottom}
+        <Bottom2 />
     </div>
 )
 
