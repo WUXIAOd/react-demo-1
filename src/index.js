@@ -30,6 +30,13 @@ const Bottom2 = function (){
         </div>
     )
 }
+class Bottom3 extends React.Component{
+    render(){
+        return (
+            <div>bottom 3</div>
+        )
+    }
+}
 
 const div = (
     <div>
@@ -40,6 +47,7 @@ const div = (
             <span>hi</span>
         </p>
         <Bottom2 />
+        <Bottom3 />
     </div>
 )
 
