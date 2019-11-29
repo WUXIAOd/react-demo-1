@@ -1,20 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const div = (
-    React.createElement('div',null,
-        React.createElement('p',null,
-            React.createElement('span',null,'hi')))
-
+const Header = (
+    <header>
+        header
+    </header>
 )
-//等价于：
+const Bottom = (
+    <div>
+        bottom
+    </div>
+)
 const div = (
     <div>
+        {Header}
         <p>
             <span>hi</span>
         </p>
+        {Bottom}
     </div>
 )
+
 console.log(div);
 ReactDOM.render(div,document.getElementById('root'))
 
